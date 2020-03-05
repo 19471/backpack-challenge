@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="parent"> 
+    <h1>Backpack Game</h1>
+    {% from "formhelpers.html" import render_field %}
+    <div class="addform">
+        <form method="POST" action="/">
+            {{ render_field(form.item) }}
+            <input type="submit" value="Add"> 
+        </form>
+    </div>
+
+    <h2>items in the backpack:</h2>
+    {%for item in items%}
+    <p>{{item.Item1}}</p>
+    <form method="POST" action="./update">
+    <input type="hidden" value="{{item.Item1}}" name="olditem">
+    <input type="text" value="{{item.Item1}}" name="newitem">
+    <input type="submit" value="Update">
+    </form>
+
+    <form method="POST" action="./delete">
+        <input type="hidden" value="{{item.Item1}}" name="item">
+        <input type="submit" value="Delete">
+      </form>
+    {%endfor%}
+</div>
+{%endblock%}

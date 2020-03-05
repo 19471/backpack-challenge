@@ -1,0 +1,70 @@
+/*stylesheet for backpack website v3*/
+
+/*body of page*/
+html{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #ebeced;
+}
+
+/*header on home page "Backpack game"*/
+h1{
+    text-align: center;
+    color: #3e3e3b;
+}
+
+/*sub header on home page "items in the backpack"*/
+h2{
+    text-align: left;
+    color: #3e3e3b;
+    padding-left: 20px;
+}
+
+/*header text in error page */
+h3{
+    text-align: center;
+    color: #3e3e3b;
+}
+
+/*item text one added/updated */
+p{
+    text-align: left;
+    padding-left: 100px;
+    color: #3e3e3b;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: expanded;
+}
+
+/*link back to the game from error page */
+.hreflink{
+    text-align: center;
+    padding: 50px;
+}
+
+/*form*/
+form{
+    padding-left: 20px;
+}
+input[type=text], select {
+    text-align: center;
+    width: 100;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100;
+    background-color: #4c586f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #a2aab0;
